@@ -8,7 +8,7 @@ palavrasacertadas = ("_","_","_","_","_","_",)
 
 enforcou = falso
 acertou = falso
-
+tentativas = 0
 while(not enforcou and not acertou):
     chute = input("Digite uma letra")
     chute = chute.strip()
@@ -16,9 +16,25 @@ while(not enforcou and not acertou):
     index = 0
     for letra in pallavrasecreta:
         if(chute.upper() == letra.upper())
-        print("encontrei a letra {} na posição{}".format(letra,index))
+          print("encontrei a letra {} na posição{}".format(letra,index))
         index = index + 1
 
-        t("jogando")
+        print("jogando")
 
-        im do jogo
+        print("fim do jogo")
+
+        else
+        tentativas += 1
+
+        # controle de tentativas
+        enforcou = tentativas == total_tentativas
+        acertou = "_" not in letrascartadas
+        print("letrasacertadas: {}",format(letrasacertadas))
+        print("tentativasrestantes: {}",format(total_tentativa - tentativa))
+
+        if(acerto):
+          print("parabens, voce ganhou!")
+          elif(enforco):
+            print("voce perdeu! A palavra era {}",format(palavrassecretas))
+
+            print("fim do jogo")
